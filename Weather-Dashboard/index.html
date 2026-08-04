@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="weather-animation"></div>
+    <header class="topbar">
+        <div class="brand">
+            <span class="brand-icon">☁️</span>
+            <div>
+                <h1>Weather Dashboard</h1>
+                <p id="weatherLocation" class="location-text">Search a city or use current location</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="search-panel">
+        <div class="search-row">
+            <input id="city" type="text" placeholder="Enter city name">
+            <button id="searchBtn" class="primary-btn">Search</button>
+            <ul id="suggestions" class="suggestions-dropdown" role="listbox" aria-label="Search suggestions"></ul>
+        </div>
+        <div class="action-row">
+            <button id="unitBtn" class="secondary-btn">Show °F</button>
+            <button id="voiceBtn" class="secondary-btn">Voice Search</button>
+            <button id="favoriteBtn" class="secondary-btn">Add Favorite</button>
+            <button id="darkModeBtn" class="secondary-btn">Dark Mode</button>
+        </div>
+        <div class="action-row">
+            <button id="refreshBtn" class="secondary-btn">Refresh</button>
+            <button id="clearHistoryBtn" class="secondary-btn">Clear History</button>
+        </div>
+        <button id="locationBtn" class="location-btn">Use Current Location</button>
+    </section>
+
+    <section id="weather" class="weather-card">
+        <div class="empty-state">
+            <p>Enter a city to view current weather, forecast, and recent search history.</p>
+        </div>
+    </section>
+
+    <section id="forecast" class="forecast-card"></section>
+
+    <section class="professional-card">
+        <div class="professional-header">
+            <h2>Professional Summary</h2>
+            <p>Designed for polished display, fast weather access, and modern interaction across devices.</p>
+        </div>
+        <div class="professional-grid">
+            <div class="feature-card">
+                <strong>Elegant layout</strong>
+                <span>Clean visual hierarchy with intuitive controls.</span>
+            </div>
+            <div class="feature-card">
+                <strong>Fast access</strong>
+                <span>Search, refresh, and current location in one click.</span>
+            </div>
+            <div class="feature-card">
+                <strong>Smart history</strong>
+                <span>Recent searches and favorites keep your cities ready.</span>
+            </div>
+            <div class="feature-card">
+                <strong>Theme-ready</strong>
+                <span>Light and dark modes with weather-driven styling.</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="history-card">
+        <h2>Recent Searches</h2>
+        <div id="history" class="history-list"></div>
+    </section>
+
+    <section class="favorites-card">
+        <h2>Favorite Cities</h2>
+        <div id="favorites" class="history-list"></div>
+    </section>
+
+    <p class="note">Add your OpenWeatherMap API key in <code>script.js</code>. Get a free key at <a href="https://openweathermap.org/api" target="_blank">openweathermap.org/api</a>.</p>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
