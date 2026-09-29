@@ -1,17 +1,17 @@
 # 🌤️ Weather Dashboard
 
-A simple and responsive Weather Dashboard that allows users to search for a city and view real-time weather information using a weather API.
+A responsive web-based Weather Dashboard that provides real-time weather information for any city using a weather API.
 
 ## 🚀 Features
 
-- 🔍 Search weather by city name
-- 🌡️ Display current temperature
+- 🔍 Search weather by city
+- 🌡️ Current temperature
 - ☁️ Weather condition
-- 💧 Humidity information
+- 💧 Humidity
 - 💨 Wind speed
-- 📍 City-based weather information
+- 🌍 City-based weather information
 - 📱 Responsive design
-- ⚡ Real-time weather data using API
+- ⚡ Real-time weather data
 
 ## 🛠️ Technologies Used
 
@@ -23,10 +23,9 @@ A simple and responsive Weather Dashboard that allows users to search for a city
 ## 📂 Project Structure
 
 ```text
-weather/
+Weather-Dashboard/
 │
-└── Weather-Dashboard/
-    ├── index.html
-    ├── style.css
-    ├── script.js
-    └── images/
+├── index.html
+├── style.css
+├── script.js
+└── images/
